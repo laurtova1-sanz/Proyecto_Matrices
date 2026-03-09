@@ -44,7 +44,7 @@ float[][] CalcularInversa(float[][] matriz) {
   // Metodo Gauss Jordan
   for (int filaPivote = 0; filaPivote < n; filaPivote++) {
     // Si el pivote es 0, la matriz NO es invertible
-    if (aumentar[filaPivote][filaPivote] == 0) {
+    if (aumentar[filaPivote][filaPivote] < 0.0001) {
       esInvertible = false;
       return null;
     }
@@ -148,3 +148,4 @@ float[][] CalcularInversa(float[][] matriz) {
     
     
     
+
